@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Contact Revive Pinnacle for SEO, PPC, Social Media Marketing, Web Design and Web Development. Tell us about your project and get a free consultation.">
+    <title>Contact Us | Revive Pinnacle</title>
+
+    <!-- fav-icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logo/favicon.png">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900;1000&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- css plugin -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/nextmarketing-icon/custom-icon.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/leaflet.css">
+
+    <!-- template css -->
+    <link rel="stylesheet" href="assets/css/nextpro.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        /* Ensure hamburger bar is properly visible and positioned on mobile */
+        @media (max-width: 1199.98px) {
+            .hamburger-bar {
+                display: flex !important;
+                position: relative !important;
+                right: auto !important;
+                bottom: auto !important;
+                margin-left: auto;
+                width: 38px;
+                height: 38px;
+                cursor: pointer;
+                z-index: 100;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .section-header__row {
+                align-items: center !important;
+            }
+        }
+
+        .mobilenav-container a,
+        .mobilenav-container .menu-icon,
+        .hamburger-bar {
+            cursor: pointer;
+        }
+
+        /* ---------- Contact page: breadcrumb ---------- */
+        .rp-breadcrumb {
+            padding: 70px 0 80px;
+        }
+
+        .rp-breadcrumb__bg {
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px;
+            padding: 90px 40px;
+            text-align: center;
+            color: #fff;
+            background: linear-gradient(135deg, #2E4DFE 0%, #1a2fb8 100%);
+        }
+
+        .rp-breadcrumb__bg::before,
+        .rp-breadcrumb__bg::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .08);
+            pointer-events: none;
+        }
+
+        .rp-breadcrumb__bg::before {
+            width: 320px;
+            height: 320px;
+            top: -140px;
+            left: -90px;
+        }
+
+        .rp-breadcrumb__bg::after {
+            width: 260px;
+            height: 260px;
+            bottom: -130px;
+            right: -60px;
+        }
+
+        .rp-breadcrumb__title {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+            font-size: clamp(34px, 5vw, 56px);
+            font-weight: 700;
+            margin: 0 0 18px;
+        }
+
+        .rp-breadcrumb__list {
+            position: relative;
+            z-index: 1;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+            padding: 10px 22px;
+            list-style: none;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, .14);
+            font-weight: 500;
+        }
+
+        .rp-breadcrumb__list a {
+            color: #fff;
+            text-decoration: none;
+            opacity: .85;
+        }
+
+        .rp-breadcrumb__list a:hover {
+            opacity: 1;
+        }
+
+        .rp-breadcrumb__list li+li::before {
+            content: "/";
+            margin-right: 10px;
+            opacity: .6;
+        }
+
+        /* ---------- Contact page: body ---------- */
+        .rp-contact {
+            padding: 0 0 110px;
+        }
+
+        .rp-contact__info,
+        .rp-contact__formwrap {
+            height: 100%;
+            border-radius: 24px;
+            padding: 40px;
+        }
+
+        .rp-contact__info {
+            background: #2E4DFE;
+            color: #fff;
+        }
+
+        .rp-contact__info h3 {
+            color: #fff;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        .rp-contact__info p {
+            color: rgba(255, 255, 255, .85);
+            margin-bottom: 32px;
+        }
+
+        .rp-contact__item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 22px;
+        }
+
+        .rp-contact__icon {
+            flex: 0 0 52px;
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, .16);
+            color: #fff;
+        }
+
+        .rp-contact__label {
+            display: block;
+            font-size: 14px;
+            opacity: .75;
+        }
+
+        .rp-contact__item a {
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+            text-decoration: none;
+            word-break: break-word;
+        }
+
+        .rp-contact__social {
+            display: flex;
+            gap: 10px;
+            margin: 36px 0 0;
+            padding: 24px 0 0;
+            list-style: none;
+            border-top: 1px solid rgba(255, 255, 255, .22);
+        }
+
+        .rp-contact__social a {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background: rgba(255, 255, 255, .16);
+            transition: background .2s, color .2s;
+        }
+
+        .rp-contact__social a:hover {
+            background: #fff;
+            color: #2E4DFE;
+        }
+
+        .rp-contact__formwrap {
+            background: var(--bs-body-bg, #fff);
+            border: 1px solid var(--bs-border-color, #e5e7ee);
+        }
+
+        .rp-contact__formwrap h2 {
+            font-size: clamp(26px, 3vw, 34px);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .rp-contact__formwrap>p {
+            margin-bottom: 28px;
+        }
+
+        .rp-field {
+            margin-bottom: 20px;
+        }
+
+        .rp-field label {
+            display: block;
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .rp-field label span {
+            color: #e5484d;
+        }
+
+        .rp-field .form-control,
+        .rp-field .form-select {
+            height: 54px;
+            border-radius: 12px;
+            padding: 0 18px;
+            box-shadow: none;
+        }
+
+        .rp-field textarea.form-control {
+            height: auto;
+            min-height: 150px;
+            padding: 14px 18px;
+            resize: vertical;
+        }
+
+        .rp-field .form-control:focus,
+        .rp-field .form-select:focus {
+            border-color: #2E4DFE;
+            box-shadow: 0 0 0 .2rem rgba(46, 77, 254, .15);
+        }
+
+        .rp-field .is-invalid {
+            border-color: #e5484d;
+        }
+
+        .rp-field__error {
+            display: none;
+            margin-top: 6px;
+            font-size: 13px;
+            color: #e5484d;
+        }
+
+        .rp-field .is-invalid~.rp-field__error {
+            display: block;
+        }
+
+        .rp-consent {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            margin-bottom: 26px;
+        }
+
+        .rp-consent .form-check-input {
+            flex: 0 0 auto;
+            margin-top: 4px;
+        }
+
+        .rp-form-status {
+            margin-top: 18px;
+            padding: 14px 18px;
+            border-radius: 12px;
+            display: none;
+            font-weight: 500;
+        }
+
+        .rp-form-status.is-success {
+            display: block;
+            background: #e8f7ee;
+            color: #146c3a;
+        }
+
+        .rp-form-status.is-error {
+            display: block;
+            background: #fdecec;
+            color: #a12a2f;
+        }
+
+
+        /* Override template's blue input styling */
+        .rp-field .form-control {
+            background: #fff !important;
+            color: #1a1f36 !important;
+            border: 1px solid #d9dce8 !important;
+            font-weight: 500;
+        }
+
+        .rp-field .form-control::placeholder {
+            color: #8a90a6 !important;
+            opacity: 1;
+        }
+
+        .rp-field .form-control:focus {
+            border-color: #2E4DFE !important;
+            box-shadow: 0 0 0 .2rem rgba(46, 77, 254, .15);
+        }
+
+        .rp-field .form-control.is-invalid {
+            border-color: #e5484d !important;
+            background-image: none !important;
+        }
+
+        .rp-contact__icon i {
+            font-size: 20px;
+            color: #fff;
+        }
+
+        @media (max-width: 575.98px) {
+            .rp-breadcrumb {
+                padding: 40px 0 50px;
+            }
+
+            .rp-breadcrumb__bg {
+                padding: 60px 20px;
+                border-radius: 22px;
+            }
+
+            .rp-contact__info,
+            .rp-contact__formwrap {
+                padding: 28px 22px;
+            }
+        }
+    </style>
+
+    <!-- theme mode js -->
+    <script src="assets/js/theme-mode.js"></script>
+</head>
+
+<body class="custom-cursor">
+    <!--cursor-pointer-->
+    <div class="custom-cursor-one"></div>
+    <div class="custom-cursor-two"></div>
+    <div class="wrapper">
+
+        <div class="topbar-two d-none d-lg-block bg-transparent @@topbarClass">
+            <div class="container-fluid">
+                <div
+                    class="topbar-two__inner d-flex align-items-center justify-content-between @@topbarBorderBottomClass">
+                    <ul class="reset-ul topbar-two__infolist d-flex align-items-center">
+                        <li>
+                            <span class="topbar-two__icon message"><svg width="22" height="20">
+                                    <use xlink:href="#message"></use>
+                                </svg></span>
+                            <a href="mailto:revivepinnacle@gmail.com"
+                                aria-label="email address">revivepinnacle@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="topbar-two__icon call-two"><svg width="22" height="22">
+                                    <use xlink:href="#call-two"></use>
+                                </svg></span>
+                            <strong>Call us: </strong>
+                            <a href="tel:+18773477083" aria-label="tel number">+1-877-347-7083</a>
+                        </li>
+                    </ul>
+                    <div class="topbar-two__callsupport d-flex align-items-center">
+                        <ul class="reset-ul footer__socialwrap d-none d-xl-flex">
+                            <li><a href="#" aria-label="social link"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#" aria-label="social link"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="#" aria-label="social link"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" aria-label="social link"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- topbar-two -->
+
+        <header class="section-header section-header--three" id="home">
+            <div class="container-fluid">
+                <div class="section-header__inner">
+                    <div
+                        class="section-header__row d-flex flex-wrap align-items-center justify-content-between position-relative">
+                        <div class="section-header__logo">
+                            <div class="section-header__logo-inner">
+                                <a href="index.html" aria-label="logo">
+                                    <img src="assets/logo/rp-logo-1.png" class="logo-dark img-fluid"
+                                        alt="revive-pinnacle-logo">
+                                    <img src="assets/logo/rp-logo-1.png" class="logo-light img-fluid"
+                                        alt="revive-pinnacle-logo-light">
+                                </a>
+                            </div>
+                        </div>
+
+                        <nav class="section-header__main-menu">
+                            <ul class="mobileMenu reset-ul d-flex align-items-center">
+                                <li><a href="index.html#home" aria-label="page link">Home</a></li>
+                                <li><a href="index.html#about" aria-label="page link">About Us</a></li>
+                                <li><a href="index.html#services" aria-label="page link">Services</a></li>
+                                <li><a href="contact.html" aria-label="page link">Contact Us</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="section-header__right d-none d-xl-flex align-items-center">
+                            <div class="section-header__right-bg d-flex align-items-center">
+                                <a href="contact.html" aria-label="page link"
+                                    class="header-btn-two next-marketing-btn dark-btn btn">Get in Touch</a>
+                            </div>
+                        </div>
+
+                        <div class="hamburger-bar menu-icon" role="button" aria-label="Toggle Navigation Menu">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ./header end -->
+
+        <!-- ================= BREADCRUMB ================= -->
+        <section class="rp-breadcrumb">
+            <div class="container">
+                <div class="rp-breadcrumb__bg">
+                    <h1 class="rp-breadcrumb__title">Contact Us</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="rp-breadcrumb__list">
+                            <li><a href="index.html">Home</a></li>
+                            <li aria-current="page">Contact Us</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- ./breadcrumb end -->
+
+        <!-- ================= CONTACT ================= -->
+        <section class="rp-contact">
+            <div class="container">
+                <div class="row g-4 g-xl-5">
+                    <div class="col-lg-5">
+                        <div class="rp-contact__info">
+                            <h3>Let's talk about your project</h3>
+                            <p>Tell us what you want to achieve. Our team will review your message and get back to you
+                                with the next steps.</p>
+
+                            <div class="rp-contact__item">
+                                <span class="rp-contact__icon"><i class="fa-regular fa-envelope"></i></span>
+                                <div>
+                                    <span class="rp-contact__label">Email us</span>
+                                    <a href="mailto:revivepinnacle@gmail.com">revivepinnacle@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="rp-contact__item">
+                                <span class="rp-contact__icon"><i class="fa-solid fa-phone"></i></span>
+                                <div>
+                                    <span class="rp-contact__label">Call us</span>
+                                    <a href="tel:+18773477083">+1-877-347-7083</a>
+                                </div>
+                            </div>
+
+                            <ul class="rp-contact__social">
+                                <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="rp-contact__formwrap">
+                            <h2>Send us a message</h2>
+                            <p>Fields marked <span style="color:#e5484d">*</span> are required.</p>
+
+                            <form id="contactForm" novalidate>
+                                <!-- honeypot (spam protection) -->
+                                <input type="text" name="website" tabindex="-1" autocomplete="off"
+                                    style="position:absolute;left:-9999px" aria-hidden="true">
+
+                                <div class="rp-field">
+                                    <label for="cfName">Full name <span>*</span></label>
+                                    <input type="text" id="cfName" name="fullName" class="form-control"
+                                        placeholder="John Doe" autocomplete="name" required>
+                                    <div class="rp-field__error">Please enter your full name.</div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6 rp-field">
+                                        <label for="cfEmail">Email address <span>*</span></label>
+                                        <input type="email" id="cfEmail" name="email" class="form-control"
+                                            placeholder="you@company.com" autocomplete="email" required>
+                                        <div class="rp-field__error">Please enter a valid email address.</div>
+                                    </div>
+                                    <div class="col-sm-6 rp-field">
+                                        <label for="cfPhone">Phone number <span>*</span></label>
+                                        <input type="tel" id="cfPhone" name="phone" class="form-control"
+                                            placeholder="+1 555 000 0000" autocomplete="tel" required>
+                                        <div class="rp-field__error">Please enter a valid phone number.</div>
+                                    </div>
+                                </div>
+
+                                <div class="rp-field">
+                                    <label for="cfMessage">Message <span>*</span></label>
+                                    <textarea id="cfMessage" name="message" class="form-control" rows="5"
+                                        placeholder="Tell us about your project." minlength="10" required></textarea>
+                                    <div class="rp-field__error">Please write a message of at least 10 characters.
+                                    </div>
+                                </div>
+
+                                <button type="submit" id="cfSubmit"
+                                    class="next-marketing-btn dark-btn form-btn btn">Send
+                                    message</button>
+                                <div id="cfStatus" class="rp-form-status" role="status" aria-live="polite"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./contact end -->
+
+        <footer class="footer footer footer--four" id="contact" data-bs-theme="light">
+            <div class="footer__top position-relative">
+                <div class="footer__top-bg position-absolute top-0 start-0 end-0 w-100 h-100 m-auto"
+                    style="background-image: url('assets/images/background/services-bg1-1.png');"></div>
+                <div class="container-fluid">
+                    <div class="footer__bg bg-primary">
+                        <div class="footer__innermx">
+                            <div class="row gutter-y-30">
+                                <div class="footer-widget footer-widget__col1">
+                                    <h5 class="footer-widget__title">About Revive Pinnacle</h5>
+                                    <p class="footer__text">Revive Pinnacle is a leading digital marketing and web
+                                        development agency specializing in helping businesses thrive in the digital
+                                        world. With 8+ years of experience.</p>
+                                    <ul class="reset-ul footer__socialwrap">
+                                        <li><a href="#" aria-label="social link"><i
+                                                    class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#" aria-label="social link"><i
+                                                    class="fa-brands fa-x-twitter"></i></a></li>
+                                        <li><a href="#" aria-label="social link"><i
+                                                    class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#" aria-label="social link"><i
+                                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-widget footer-widget__col2">
+                                    <h5 class="footer-widget__title">Company</h5>
+                                    <ul class="reset-ul footer-widget__links">
+                                        <li><a href="index.html#about" aria-label="page link">About Us</a></li>
+                                        <li><a href="contact.html" aria-label="page link">Careers</a></li>
+                                        <li><a href="index.html#services" aria-label="page link">Blog</a></li>
+                                        <li><a href="contact.html" aria-label="page link">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-widget footer-widget__col3">
+                                    <h5 class="footer-widget__title">Resources</h5>
+                                    <ul class="reset-ul footer-widget__links">
+                                        <li><a href="index.html#services" aria-label="page link">Blog & Insights</a>
+                                        </li>
+                                        <li><a href="contact.html" aria-label="page link">Help Center</a></li>
+                                        <li><a href="contact.html" aria-label="page link">Support</a></li>
+                                        <li><a href="index.html#about" aria-label="page link">Case Studies</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-widget footer-widget__col4">
+                                    <h5 class="footer-widget__title">Services</h5>
+                                    <ul class="reset-ul footer-widget__links">
+                                        <li><a href="index.html#services" aria-label="service link">SEO Services</a>
+                                        </li>
+                                        <li><a href="index.html#services" aria-label="service link">Web Design</a></li>
+                                        <li><a href="index.html#services" aria-label="service link">Web Development</a>
+                                        </li>
+                                        <li><a href="index.html#services" aria-label="service link">Digital
+                                                Marketing</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-widget footer-widget__col5">
+                                    <h5 class="footer-widget__title">Legal</h5>
+                                    <ul class="reset-ul footer-widget__links">
+                                        <li><a href="privacy-policy.html" aria-label="privacy link">Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container-fluid">
+                    <div class="footer__bg footer__bottom-bg">
+                        <div class="footer__innermx footer__bottom-innermx">
+                            <div class="row">
+                                <p class="footer__bottom__designed col-md-6 text-start">Developed with Excellence by <a
+                                        href="index.html" aria-label="web link">Revive Pinnacle</a></p>
+                                <p class="footer__bottom__copyright col-md-6 text-end">&copy; <span
+                                        class="dynamic-year">2024</span>. All Rights Reserved - Revive Pinnacle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /.page end -->
+
+    <!-- mobile menu -->
+    <div class="mobilenav-container">
+        <div class="mobilenav-container__overlay menu-icon"></div>
+        <div class="mobilenav-container__content">
+            <div class="menu-icon"><i class="fa-solid fa-xmark"></i></div>
+            <div class="logo-box">
+                <a href="index.html" aria-label="page link"><img src="assets/logo/footer-logo-rp.png"
+                        alt="Revive Pinnacle"></a>
+            </div>
+            <div id="mb_menu_holder"></div>
+            <div class="header-info-sidebar__feature">
+                <ul class="reset-ul">
+                    <li>
+                        <a href="index.html#about" aria-label="feature link">
+                            <div class="header-info-sidebar__icon">
+                                <svg width="18" height="21" viewBox="0 0 18 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11.7379 1.26181H5.08493C3.00493 1.25381 1.29993 2.91181 1.25093 4.99081V15.7038C1.20493 17.8168 2.87993 19.5678 4.99293 19.6148C5.02393 19.6148 5.05393 19.6158 5.08493 19.6148H13.0739C15.1679 19.5298 16.8179 17.7998 16.8029 15.7038V6.53781L11.7379 1.26181Z"
+                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.4756 1.25V4.159C11.4756 5.579 12.6236 6.73 14.0436 6.734H16.7986"
+                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.2887 13.8585H5.88867" stroke="#fff" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.2437 10.106H5.8877" stroke="#fff" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <span>Knowledge Base</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" aria-label="feature link">
+                            <div class="header-info-sidebar__icon">
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.0714 18.5699C15.0152 21.6263 10.4898 22.2867 6.78642 20.574C6.23971 20.3539 5.79148 20.176 5.36537 20.176C4.17849 20.183 2.70117 21.3339 1.93336 20.567C1.16555 19.7991 2.31726 18.3206 2.31726 17.1266C2.31726 16.7004 2.14642 16.2602 1.92632 15.7124C0.212831 12.0096 0.874109 7.48269 3.93026 4.42721C7.8316 0.524432 14.17 0.524432 18.0714 4.4262C21.9797 8.33501 21.9727 14.6681 18.0714 18.5699Z"
+                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.9398 11.913H14.9488" stroke="#fff" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.9301 11.913H10.9391" stroke="#fff" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M6.92128 11.913H6.93028" stroke="#fff" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <span>Get Support</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#services" aria-label="feature link">
+                            <div class="header-info-sidebar__icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1 5C1 2.37479 1.02811 1.5 4.5 1.5C7.97189 1.5 8 2.37479 8 5C8 7.62521 8.01107 8.5 4.5 8.5C0.988927 8.5 1 7.62521 1 5Z"
+                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 5C12 2.37479 12.0281 1.5 15.5 1.5C18.9719 1.5 19 2.37479 19 5C19 7.62521 19.0111 8.5 15.5 8.5C11.9889 8.5 12 7.62521 12 5Z"
+                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1 16C1 13.3748 1.02811 12.5 4.5 12.5C7.97189 12.5 8 13.3748 8 16C8 18.6252 8.01107 19.5 4.5 19.5C0.988927 19.5 1 18.6252 1 16Z"
+                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 16C12 13.3748 12.0281 12.5 15.5 12.5C18.9719 12.5 19 13.3748 19 16C19 18.6252 19.0111 19.5 15.5 19.5C11.9889 19.5 12 18.6252 12 16Z"
+                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <span>Our Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#exampleModalToggle" data-bs-toggle="modal" aria-label="feature link">
+                            <div class="header-info-sidebar__icon">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.492 1.289H5.753C2.678 1.289 0.75 3.466 0.75 6.548V14.862C0.75 17.944 2.669 20.121 5.753 20.121H14.577C17.662 20.121 19.581 17.944 19.581 14.862V10.834"
+                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.82763 9.42093L14.3006 1.94793C15.2316 1.01793 16.7406 1.01793 17.6716 1.94793L18.8886 3.16493C19.8196 4.09593 19.8196 5.60593 18.8886 6.53593L11.3796 14.0449C10.9726 14.4519 10.4206 14.6809 9.84463 14.6809H6.09863L6.19263 10.9009C6.20663 10.3449 6.43363 9.81493 6.82763 9.42093Z"
+                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M13.165 3.10254L17.731 7.66854" stroke="#fff" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <span>Request Quote</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="reset-ul mobilenav-container__contact">
+                <li>
+                    <span class="topbar-two__icon"><i class="fa-regular fa-envelope"></i></span>
+                    <a href="mailto:revivepinnacle@gmail.com" aria-label="email address">revivepinnacle@gmail.com</a>
+                </li>
+                <li>
+                    <span class="topbar-two__icon"><i class="fa-solid fa-phone-flip"></i></span>
+                    <a href="tel:+18773477083" aria-label="tel number">+1-877-347-7083</a>
+                </li>
+            </ul>
+            <ul class="reset-ul mobilenav-container__socialwrap">
+                <li><a href="#" aria-label="social link"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#" aria-label="social link"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" aria-label="social link"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="social link"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- mobile menu end -->
+
+    <!-- plugin js -->
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/anime.min.js"></script>
+    <script src="assets/js/animate.js"></script>
+    <script src="assets/js/odometer.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/moving-elments.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/leaflet.js"></script>
+    <script src="assets/js/lazy.image.js"></script>
+
+    <!-- template js -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Free Consultation Form (opened by "Get a Quote") -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-label="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Get Your Free Consultation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="section-form__form w-100">
+                        <form id="consultationForm">
+                            <div class="form-row d-flex flex-wrap">
+                                <div class="form-group col-sm-6">
+                                    <input type="text" name="firstName" class="form-control" placeholder="First Name"
+                                        required>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <input type="text" name="lastName" class="form-control" placeholder="Last Name"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-row d-flex flex-wrap">
+                                <div class="form-group col-sm-6">
+                                    <input type="text" name="company" class="form-control" placeholder="Company Name"
+                                        required>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <input type="text" name="phone" class="form-control" placeholder="Phone Number"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-row d-flex flex-wrap">
+                                <div class="form-group col-sm-6">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email"
+                                        required>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <input type="text" name="service" class="form-control"
+                                        placeholder="Service of Interest" required>
+                                </div>
+                            </div>
+                            <div class="form-row d-flex flex-wrap">
+                                <div class="form-group col-12 d-flex gap-3">
+                                    <input class="form-check-input" type="checkbox" name="agree" value="yes"
+                                        id="formCheck" required="">
+                                    <label class="form-check-label fw-medium" for="formCheck">
+                                        I agree to be contacted by Revive Pinnacle regarding my inquiry
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="next-marketing-btn dark-btn form-btn btn">Request
+                                Consultation</button>
+                            <div class="response py-3"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Consultation Form end -->
+
+    <!-- Contact form logic (Formspree) -->
+    <script>
+        (function () {
+            var FORM_ENDPOINT = "https://formspree.io/f/mvkarvze";
+            var TO_EMAIL = "revivepinnacle@gmail.com";
+
+            /* ---------- helper: send data to Formspree ---------- */
+            function sendToFormspree(data) {
+                return fetch(FORM_ENDPOINT, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                }).then(function (res) {
+                    if (!res.ok) {
+                        return res.json().then(function (j) {
+                            var msg = (j && j.errors && j.errors.length)
+                                ? j.errors.map(function (e) { return e.message; }).join(", ")
+                                : "Request failed";
+                            throw new Error(msg);
+                        });
+                    }
+                    return res.json();
+                });
+            }
+
+            /* =====================================================
+               1) MAIN CONTACT FORM  (#contactForm)
+               ===================================================== */
+            var form = document.getElementById("contactForm");
+            var status = document.getElementById("cfStatus");
+            var btn = document.getElementById("cfSubmit");
+
+            if (form) {
+                var rules = {
+                    fullName: function (v) { return v.trim().length > 1; },
+                    email: function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()); },
+                    phone: function (v) { return /^[+()\d\s-]{7,20}$/.test(v.trim()); },
+                    message: function (v) { return v.trim().length >= 10; }
+                };
+
+                function check(field) {
+                    var rule = rules[field.name];
+                    if (!rule) return true;
+                    var ok = rule(field.value);
+                    field.classList.toggle("is-invalid", !ok);
+                    return ok;
+                }
+
+                Array.prototype.forEach.call(form.elements, function (el) {
+                    if (rules[el.name]) {
+                        el.addEventListener("blur", function () { check(el); });
+                        el.addEventListener("input", function () {
+                            if (el.classList.contains("is-invalid")) check(el);
+                        });
+                    }
+                });
+
+                function setStatus(type, text) {
+                    status.className = "rp-form-status " + (type ? "is-" + type : "");
+                    status.textContent = text || "";
+                }
+
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    setStatus("", "");
+
+                    // honeypot: bots fill hidden fields
+                    if (form.website.value) return;
+
+                    var valid = true;
+                    Object.keys(rules).forEach(function (name) {
+                        if (!check(form.elements[name])) valid = false;
+                    });
+                    if (!valid) {
+                        var firstBad = form.querySelector(".is-invalid");
+                        if (firstBad) firstBad.focus();
+                        return;
+                    }
+
+                    var data = {
+                        name: form.fullName.value.trim(),
+                        email: form.email.value.trim(),
+                        phone: form.phone.value.trim(),
+                        message: form.message.value.trim(),
+                        _subject: "New website enquiry from " + form.fullName.value.trim(),
+                        form_type: "Contact Page Form"
+                    };
+
+                    btn.disabled = true;
+                    btn.textContent = "Sending...";
+
+                    sendToFormspree(data)
+                        .then(function () {
+                            form.reset();
+                            setStatus("success", "Thank you, " + data.name.split(" ")[0] + ". Your message has been sent and we will be in touch soon.");
+                        })
+                        .catch(function () {
+                            setStatus("error", "Something went wrong while sending. Please try again or email " + TO_EMAIL + ".");
+                        })
+                        .finally(function () {
+                            btn.disabled = false;
+                            btn.textContent = "Send message";
+                        });
+                });
+            }
+
+            /* =====================================================
+               2) "GET A QUOTE" MODAL FORM  (#consultationForm)
+               Capture phase so the template's own script.js handler
+               doesn't also fire.
+               ===================================================== */
+            document.addEventListener("submit", function (e) {
+                var f = e.target;
+                if (!f || f.id !== "consultationForm") return;
+
+                e.preventDefault();
+                e.stopPropagation();
+                e.stopImmediatePropagation();
+
+                var resp = f.querySelector(".response");
+                var submitBtn = f.querySelector("button[type='submit']");
+                var originalText = submitBtn.textContent;
+
+                function show(ok, text) {
+                    resp.innerHTML = "";
+                    var p = document.createElement("p");
+                    p.style.margin = "0";
+                    p.style.fontWeight = "500";
+                    p.style.color = ok ? "#146c3a" : "#a12a2f";
+                    p.textContent = text;
+                    resp.appendChild(p);
+                }
+
+                var data = {
+                    name: (f.firstName.value + " " + f.lastName.value).trim(),
+                    company: f.company.value.trim(),
+                    phone: f.phone.value.trim(),
+                    email: f.email.value.trim(),
+                    service: f.service.value.trim(),
+                    consent: f.agree.checked ? "yes" : "no",
+                    _subject: "New consultation request from " + f.firstName.value.trim(),
+                    form_type: "Free Consultation Modal"
+                };
+
+                if (!f.agree.checked) {
+                    show(false, "Please tick the consent box to continue.");
+                    return;
+                }
+
+                submitBtn.disabled = true;
+                submitBtn.textContent = "Sending...";
+                resp.innerHTML = "";
+
+                sendToFormspree(data)
+                    .then(function () {
+                        f.reset();
+                        show(true, "Thank you! We received your request and will contact you soon.");
+                    })
+                    .catch(function () {
+                        show(false, "Something went wrong. Please try again or email " + TO_EMAIL + ".");
+                    })
+                    .finally(function () {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = originalText;
+                    });
+            }, true);
+        })();
+    </script>
+
+    <!-- SVG Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="message" viewBox="0 0 22 20">
+            <path d="M16.9026 6.85107L12.4593 10.4641C11.6198 11.1301 10.4387 11.1301 9.59919 10.4641L5.11841 6.85107"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.9089 19C18.9502 19.0084 21 16.5095 21 13.4384V6.57001C21 3.49883 18.9502 1 15.9089 1H6.09114C3.04979 1 1 3.49883 1 6.57001V13.4384C1 16.5095 3.04979 19.0084 6.09114 19H15.9089Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+
+        <symbol id="call-two" viewBox="0 0 22 22">
+            <path d="M13.353 1.5C17.054 1.911 19.978 4.831 20.393 8.532" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M13.353 5.04297C15.124 5.38697 16.508 6.77197 16.853 8.54297" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.0315 11.4724C14.0205 15.4604 14.9254 10.8467 17.4653 13.3848C19.9138 15.8328 21.3222 16.3232 18.2188 19.4247C17.8302 19.737 15.3613 23.4943 6.68447 14.8197C-1.99341 6.144 1.76157 3.67244 2.07394 3.28395C5.18377 0.173846 5.66682 1.58938 8.11539 4.03733C10.6541 6.5765 6.04254 7.48441 10.0315 11.4724Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+    </svg>
+</body>
+
+</html>
